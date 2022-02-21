@@ -1,6 +1,6 @@
 # I. Variables
 #boite qui contient une valeur (comme cellules Excell)
-var1 = 5 #nombre entier, integer number #integer
+var1 = 5 #nombre entier, integer number  #integer
 var2 = 4.2 #nombre decimal, floating point number #float 
 var3 = "bonjour" #chaine de caracteres, string #string
 var4 = True #bouleen #boolean
@@ -8,6 +8,7 @@ var5 = ["bonjour", 5, 3.5] #liste (plusieurs valeurs ; elles peuvent etre de typ
 
 #! on separe les elements d'une liste avec une virgule
 #! les virgules des chiffres s'ecrivent en point
+# 4. est aussi un float (et est egal à 4)
 
 total = var1 + var2
 
@@ -28,7 +29,7 @@ else: #il n'y a jamais de condition apres un else ! aux deux points
 
 # III. Boucles
 #principe d'une boucle: repeter une instruction
-while var1 > var2: #! toujours :, c'est aussi une instruction
+while var1 > var2: #! toujours :, c'est aussi une instruction, "tant que"
     print(var1)
 #si on executait maintenant, on aurait une boucle infinie: il repeterait tout le temps 5
 #pour arreter une boucle infinie: ctrl c
@@ -44,9 +45,12 @@ print("---------------")
 # IV. Fonctions
 # micro-programme qui permet d'executer une (suite d')instruction(s)
 # ! toujours la definir avant de pouvoir l'utiliser (def)
-def add(a,b): #def est une instruction donc il faut deux points
+def add(a, b): #def est une instruction donc il faut deux points
     resultat = a + b
     return resultat
+def soust(a, b):
+    return a-b
+
 
 total = add(var1, var2)  
 print(total)
